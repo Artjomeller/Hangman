@@ -57,7 +57,7 @@ class Controller:
         #  Kontrollida kas mäng on läbi.
 
         print(self.__model.wrong_guesses)
-        if self.__model.wrong_guesses >= 11:
+        if self.__model.wrong_guesses >= 10:
             print('Kaotasid!')
             self.btn_cancel_click()
             show_message('lose')
